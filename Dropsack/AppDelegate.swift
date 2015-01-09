@@ -13,6 +13,7 @@ import WebKit
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    var bridge: WebViewJavascriptBridge!
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
@@ -20,15 +21,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.window.contentView.addSubview(webView)
         
         let indexFile = NSBundle.mainBundle().pathForResource("recipe", ofType: "html")
-        let bridge = WebViewJavascriptBridge(forWebView: webView, handler: {
+        self.bridge = WebViewJavascriptBridge(forWebView: webView, handler: {
             data, responseCallback in
             println("Message from Javascript: \(data)")
             responseCallback("Back at ya")
         })
         webView.mainFrameURL = indexFile
         
-        bridge.send("Hello!")
-        bridge.send("Hello and come back", responseCallback: { responseData in
+        self.bridge.send("Hello!")
+        self.bridge.send("Hello and come back", responseCallback: { responseData in
             println("Coming back!")
         })
     }
