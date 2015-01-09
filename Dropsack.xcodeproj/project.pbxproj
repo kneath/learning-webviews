@@ -11,6 +11,8 @@
 		843B7F791A5F787000721C9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F781A5F787000721C9B /* Images.xcassets */; };
 		843B7F7C1A5F787000721C9B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F7A1A5F787000721C9B /* MainMenu.xib */; };
 		843B7F881A5F787000721C9B /* DropsackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B7F871A5F787000721C9B /* DropsackTests.swift */; };
+		843B7F921A5F78DE00721C9B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843B7F911A5F78DD00721C9B /* WebKit.framework */; };
+		843B7F941A5F7EF600721C9B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F931A5F7EF600721C9B /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		843B7F811A5F787000721C9B /* DropsackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropsackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843B7F861A5F787000721C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843B7F871A5F787000721C9B /* DropsackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropsackTests.swift; sourceTree = "<group>"; };
+		843B7F911A5F78DD00721C9B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		843B7F931A5F7EF600721C9B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843B7F921A5F78DE00721C9B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +60,7 @@
 		843B7F681A5F787000721C9B = {
 			isa = PBXGroup;
 			children = (
+				843B7F911A5F78DD00721C9B /* WebKit.framework */,
 				843B7F731A5F787000721C9B /* Dropsack */,
 				843B7F841A5F787000721C9B /* DropsackTests */,
 				843B7F721A5F787000721C9B /* Products */,
@@ -74,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				843B7F761A5F787000721C9B /* AppDelegate.swift */,
+				843B7F931A5F7EF600721C9B /* index.html */,
 				843B7F781A5F787000721C9B /* Images.xcassets */,
 				843B7F7A1A5F787000721C9B /* MainMenu.xib */,
 				843B7F741A5F787000721C9B /* Supporting Files */,
@@ -186,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843B7F941A5F7EF600721C9B /* index.html in Resources */,
 				843B7F791A5F787000721C9B /* Images.xcassets in Resources */,
 				843B7F7C1A5F787000721C9B /* MainMenu.xib in Resources */,
 			);
