@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import WebKit;
+import WebKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -18,11 +18,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         let webView = WebView(frame: self.window.contentView.frame)
         self.window.contentView.addSubview(webView)
-        webView.frameLoadDelegate = self;
         
         let indexFile = NSBundle.mainBundle().pathForResource("index", ofType: "html")
-        let indexString = NSString(contentsOfFile: indexFile!, encoding: NSUTF8StringEncoding, error: nil)
-        webView.mainFrame.loadHTMLString(indexString, baseURL: nil)
+        let bridge = WebViewJavascriptBridge(forWebView: webView, handler: {
+            data, responseCallback in
+            println("Message from Javascript: \(data)")
+            responseCallback("Back at ya")
+        })
+        webView.mainFrameURL = indexFile
+        
+        bridge.send("Hello!")
+        bridge.send("Hello and come back", responseCallback: { responseData in
+            println("Coming back!")
+        })
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

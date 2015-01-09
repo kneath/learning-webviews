@@ -13,6 +13,8 @@
 		843B7F881A5F787000721C9B /* DropsackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B7F871A5F787000721C9B /* DropsackTests.swift */; };
 		843B7F921A5F78DE00721C9B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843B7F911A5F78DD00721C9B /* WebKit.framework */; };
 		843B7F941A5F7EF600721C9B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F931A5F7EF600721C9B /* index.html */; };
+		843B7F981A5F8ABE00721C9B /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B7F971A5F8ABE00721C9B /* WebViewJavascriptBridge.m */; };
+		843B7F9A1A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F991A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,10 @@
 		843B7F871A5F787000721C9B /* DropsackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropsackTests.swift; sourceTree = "<group>"; };
 		843B7F911A5F78DD00721C9B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		843B7F931A5F7EF600721C9B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		843B7F951A5F8ABE00721C9B /* Dropsack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dropsack-Bridging-Header.h"; sourceTree = "<group>"; };
+		843B7F961A5F8ABE00721C9B /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		843B7F971A5F8ABE00721C9B /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		843B7F991A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +86,14 @@
 			isa = PBXGroup;
 			children = (
 				843B7F761A5F787000721C9B /* AppDelegate.swift */,
+				843B7F961A5F8ABE00721C9B /* WebViewJavascriptBridge.h */,
+				843B7F971A5F8ABE00721C9B /* WebViewJavascriptBridge.m */,
+				843B7F991A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt */,
 				843B7F931A5F7EF600721C9B /* index.html */,
 				843B7F781A5F787000721C9B /* Images.xcassets */,
 				843B7F7A1A5F787000721C9B /* MainMenu.xib */,
 				843B7F741A5F787000721C9B /* Supporting Files */,
+				843B7F951A5F8ABE00721C9B /* Dropsack-Bridging-Header.h */,
 			);
 			path = Dropsack;
 			sourceTree = "<group>";
@@ -193,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843B7F9A1A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt in Resources */,
 				843B7F941A5F7EF600721C9B /* index.html in Resources */,
 				843B7F791A5F787000721C9B /* Images.xcassets in Resources */,
 				843B7F7C1A5F787000721C9B /* MainMenu.xib in Resources */,
@@ -214,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				843B7F771A5F787000721C9B /* AppDelegate.swift in Sources */,
+				843B7F981A5F8ABE00721C9B /* WebViewJavascriptBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,10 +340,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Dropsack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dropsack/Dropsack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -339,10 +354,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Dropsack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dropsack/Dropsack-Bridging-Header.h";
 			};
 			name = Release;
 		};
