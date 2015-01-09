@@ -12,9 +12,15 @@
 		843B7F7C1A5F787000721C9B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F7A1A5F787000721C9B /* MainMenu.xib */; };
 		843B7F881A5F787000721C9B /* DropsackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B7F871A5F787000721C9B /* DropsackTests.swift */; };
 		843B7F921A5F78DE00721C9B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843B7F911A5F78DD00721C9B /* WebKit.framework */; };
-		843B7F941A5F7EF600721C9B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F931A5F7EF600721C9B /* index.html */; };
 		843B7F981A5F8ABE00721C9B /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B7F971A5F8ABE00721C9B /* WebViewJavascriptBridge.m */; };
 		843B7F9A1A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F991A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt */; };
+		843B7FA71A605DA600721C9B /* _normalize.scssc in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F9E1A605DA600721C9B /* _normalize.scssc */; };
+		843B7FA81A605DA600721C9B /* index.scssc in Resources */ = {isa = PBXBuildFile; fileRef = 843B7F9F1A605DA600721C9B /* index.scssc */; };
+		843B7FA91A605DA600721C9B /* recipe.html in Resources */ = {isa = PBXBuildFile; fileRef = 843B7FA01A605DA600721C9B /* recipe.html */; };
+		843B7FAA1A605DA600721C9B /* _normalize.scss in Resources */ = {isa = PBXBuildFile; fileRef = 843B7FA31A605DA600721C9B /* _normalize.scss */; };
+		843B7FAB1A605DA600721C9B /* compiled.css in Resources */ = {isa = PBXBuildFile; fileRef = 843B7FA41A605DA600721C9B /* compiled.css */; };
+		843B7FAC1A605DA600721C9B /* compiled.css.map in Sources */ = {isa = PBXBuildFile; fileRef = 843B7FA51A605DA600721C9B /* compiled.css.map */; };
+		843B7FAD1A605DA600721C9B /* index.scss in Resources */ = {isa = PBXBuildFile; fileRef = 843B7FA61A605DA600721C9B /* index.scss */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +43,17 @@
 		843B7F861A5F787000721C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843B7F871A5F787000721C9B /* DropsackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropsackTests.swift; sourceTree = "<group>"; };
 		843B7F911A5F78DD00721C9B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		843B7F931A5F7EF600721C9B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		843B7F951A5F8ABE00721C9B /* Dropsack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dropsack-Bridging-Header.h"; sourceTree = "<group>"; };
 		843B7F961A5F8ABE00721C9B /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		843B7F971A5F8ABE00721C9B /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		843B7F991A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		843B7F9E1A605DA600721C9B /* _normalize.scssc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _normalize.scssc; sourceTree = "<group>"; };
+		843B7F9F1A605DA600721C9B /* index.scssc */ = {isa = PBXFileReference; lastKnownFileType = file; path = index.scssc; sourceTree = "<group>"; };
+		843B7FA01A605DA600721C9B /* recipe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = recipe.html; sourceTree = "<group>"; };
+		843B7FA31A605DA600721C9B /* _normalize.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _normalize.scss; sourceTree = "<group>"; };
+		843B7FA41A605DA600721C9B /* compiled.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = compiled.css; sourceTree = "<group>"; };
+		843B7FA51A605DA600721C9B /* compiled.css.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = compiled.css.map; sourceTree = "<group>"; };
+		843B7FA61A605DA600721C9B /* index.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.scss; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +97,11 @@
 		843B7F731A5F787000721C9B /* Dropsack */ = {
 			isa = PBXGroup;
 			children = (
+				843B7F9B1A605DA600721C9B /* HTML */,
 				843B7F761A5F787000721C9B /* AppDelegate.swift */,
 				843B7F961A5F8ABE00721C9B /* WebViewJavascriptBridge.h */,
 				843B7F971A5F8ABE00721C9B /* WebViewJavascriptBridge.m */,
 				843B7F991A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt */,
-				843B7F931A5F7EF600721C9B /* index.html */,
 				843B7F781A5F787000721C9B /* Images.xcassets */,
 				843B7F7A1A5F787000721C9B /* MainMenu.xib */,
 				843B7F741A5F787000721C9B /* Supporting Files */,
@@ -121,6 +133,52 @@
 				843B7F861A5F787000721C9B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		843B7F9B1A605DA600721C9B /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				843B7F9C1A605DA600721C9B /* .sass-cache */,
+				843B7FA01A605DA600721C9B /* recipe.html */,
+				843B7FA11A605DA600721C9B /* scripts */,
+				843B7FA21A605DA600721C9B /* styles */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		843B7F9C1A605DA600721C9B /* .sass-cache */ = {
+			isa = PBXGroup;
+			children = (
+				843B7F9D1A605DA600721C9B /* ef1bcecc7533e372f0fe782b4779d29adeade2f6 */,
+			);
+			path = ".sass-cache";
+			sourceTree = "<group>";
+		};
+		843B7F9D1A605DA600721C9B /* ef1bcecc7533e372f0fe782b4779d29adeade2f6 */ = {
+			isa = PBXGroup;
+			children = (
+				843B7F9E1A605DA600721C9B /* _normalize.scssc */,
+				843B7F9F1A605DA600721C9B /* index.scssc */,
+			);
+			path = ef1bcecc7533e372f0fe782b4779d29adeade2f6;
+			sourceTree = "<group>";
+		};
+		843B7FA11A605DA600721C9B /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		843B7FA21A605DA600721C9B /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				843B7FA31A605DA600721C9B /* _normalize.scss */,
+				843B7FA41A605DA600721C9B /* compiled.css */,
+				843B7FA51A605DA600721C9B /* compiled.css.map */,
+				843B7FA61A605DA600721C9B /* index.scss */,
+			);
+			path = styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +261,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843B7FAD1A605DA600721C9B /* index.scss in Resources */,
+				843B7FA71A605DA600721C9B /* _normalize.scssc in Resources */,
+				843B7FAA1A605DA600721C9B /* _normalize.scss in Resources */,
+				843B7FAB1A605DA600721C9B /* compiled.css in Resources */,
 				843B7F9A1A5F9EAC00721C9B /* WebViewJavascriptBridge.js.txt in Resources */,
-				843B7F941A5F7EF600721C9B /* index.html in Resources */,
+				843B7FA81A605DA600721C9B /* index.scssc in Resources */,
+				843B7FA91A605DA600721C9B /* recipe.html in Resources */,
 				843B7F791A5F787000721C9B /* Images.xcassets in Resources */,
 				843B7F7C1A5F787000721C9B /* MainMenu.xib in Resources */,
 			);
@@ -226,6 +289,7 @@
 			files = (
 				843B7F771A5F787000721C9B /* AppDelegate.swift in Sources */,
 				843B7F981A5F8ABE00721C9B /* WebViewJavascriptBridge.m in Sources */,
+				843B7FAC1A605DA600721C9B /* compiled.css.map in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

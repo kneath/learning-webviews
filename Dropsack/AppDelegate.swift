@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let webView = WebView(frame: self.window.contentView.frame)
         self.window.contentView.addSubview(webView)
         
-        let indexFile = NSBundle.mainBundle().pathForResource("index", ofType: "html")
+        let indexFile = NSBundle.mainBundle().pathForResource("recipe", ofType: "html")
         let bridge = WebViewJavascriptBridge(forWebView: webView, handler: {
             data, responseCallback in
             println("Message from Javascript: \(data)")

@@ -1,0 +1,50 @@
+@import "normalize";
+
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #414141;
+  background: #ecebeb;
+}
+
+.container {
+  margin: 0 auto;
+  width: 700px;
+}
+
+a {
+  color: #3193a5;
+}
+
+.card {
+  margin: 20px 0;
+  background: #f7f7f7;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
+
+  &.text-card {
+    padding: 20px 60px 20px 60px;
+    font-family: Menlo, monospace;
+  }
+}
+
+.text-card {
+  line-height: 1.4;
+
+  h1, h2 {
+    position: relative;
+    font-size: 18px;
+
+    .formatter {
+      position: absolute;
+      left: -60px;
+      width: 50px;
+      text-align: right;
+    }
+  }
+
+  h2 {
+    margin: 1.5em 0 1em;
+  }
+}
